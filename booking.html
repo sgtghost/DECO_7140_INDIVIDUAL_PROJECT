@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Kaisereich | Booking</title>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Roboto&family=Russo+One&display=swap"
+		rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="booking">
+
+	<nav id="main_menu">
+
+		<ul>
+			<li>
+				<a href="index.html">Homepage</a>
+			</li>
+			<li>
+				<a href="activities.html">Activities</a>
+			</li>
+			<li class="currentselection">
+				<a href="booking.html">Book Now</a>
+			</li>
+			<li>
+				<a href="about.html">About</a>
+			</li>
+		</ul>
+
+	</nav>
+
+	<header id="page_header">
+
+		<section class="header_title">
+
+			<figure id="logo">
+				<img src="images/logo.png" alt="Our logo">
+			</figure>
+
+			<h1>Prepare for a WunderTrip!</h1>
+
+			<p>Please leave your booking information below</p>
+
+		</section>
+
+	</header>
+	<section id="booking_information">
+		<form method="get" action="booking.html" id='discount_form'>
+
+			<h2 class="question_answer">Before starting your booking, see if you can win a discount!</h2>
+
+			<fieldset id="discount_guess">
+
+				<legend>Quest</legend>
+
+				<div class="form_item">
+					<label for="form_answer">
+						Which city is known as the center of Hanseatic League?
+					</label>
+					<div class="form_element">
+						<input type="text" name="answer" id="form_answer" placeholder="City name" />
+					</div>
+				</div>
+				<button type="submit">Submit</button>
+
+			</fieldset>
+
+
+		</form>
+
+		<form method="get" action="booking.html" id='booking_form'>
+
+			<fieldset>
+				<legend>
+					Your Details
+				</legend>
+
+				<div class="form_item">
+					<label for="form_first_name">*First Name:</label>
+					<div class="form_element">
+						<input type="text" name="first_name" id="form_first_name" placeholder="Your first name" />
+					</div>
+				</div>
+
+				<div class="form_item">
+					<label for="form_last_name">*Last Name:</label>
+					<div class="form_element">
+						<input type="text" name="last_name" id="form_last_name" placeholder="Your last names" />
+					</div>
+
+				</div>
+
+				<div class="form_item">
+					<label for="form_phone_number">*Phone:</label>
+					<div class="form_element">
+						<input type="text" name="phone" id="form_phone_number" placeholder="Your phone number" />
+					</div>
+				</div>
+
+				<div class="form_item">
+					<label for="form_email_address">*Email:</label>
+					<div class="form_element">
+						<input type="text" name="email" id="form_email_address" placeholder="Your email address" />
+					</div>
+				</div>
+
+				<div class="form_item">
+					<label for="form_number_of_guests">Number of guests:</label>
+					<div class="form_element">
+						<select name="form_guests" id="form_number_of_guests">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="form_item">
+					<label for="form_theme_chosen">Trip Theme:</label>
+					<div class="form_element">
+						<select name="form_guests_theme" id="form_theme_chosen">
+							<option>Russia</option>
+							<option>Belarus</option>
+							<option>Ukraine</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="form_item">
+					<label for="form_other_specification">Additional specification:</label>
+					<div class="form_element">
+						<textarea id="form_other_specification" name="comments" rows="10"
+							placeholder="If you have any additional request, please list them here"></textarea>
+					</div>
+				</div>
+				<button type="submit">Book Now!</button>
+			</fieldset>
+		</form>
+
+
+
+	</section>
+	<footer id="page_footer">
+
+		<nav id="footer_menu">
+			<ul>
+				<li>
+					<a href="booking.html">Book a Room</a>
+				</li>
+				<li>
+					<a href="about.html">Contact Us</a>
+				</li>
+			</ul>
+		</nav>
+
+
+	</footer>
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/jquery.cycle2.min.js"></script>
+	<script src="js/scrollClass.min.js"></script>
+
+</body>
+
+</html>
